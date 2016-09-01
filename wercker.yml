@@ -32,7 +32,7 @@ test:
           echo "this is test phase"
     - script:
         name: step two
-	code: |
+        :code: |
           java -version
 test3:
   steps:
