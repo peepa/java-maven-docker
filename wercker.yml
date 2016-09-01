@@ -29,11 +29,17 @@ test:
     - script:
         name: step one
         code: |
-          echo "this is test phase"
+          echo "this is test phase, step one"
     - script:
         name: step two
         code: |
           java -version
+test2:
+  steps:
+    - script:
+        name: test2 step
+        code: echo "step on my fingers"
+
 test3:
   steps:
     - script:
