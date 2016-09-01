@@ -19,11 +19,12 @@ build:
     # Steps make up the actions in your pipeline
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
+  box: maven:3.3-jdk-8-onbuild-alpine
   steps:
     - script:
-        name: echo
+        name: maven
         code: |
-          echo "hello world!"
+          mvn clean package
 test:
   steps:
     - script:
