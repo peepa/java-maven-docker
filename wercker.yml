@@ -24,3 +24,21 @@ build:
         name: echo
         code: |
           echo "hello world!"
+test:
+  steps:
+    - script:
+        name: step one
+        code: |
+          echo "this is test phase"
+    - script:
+        name: step two
+	code: |
+          java -version
+test3:
+  steps:
+    - script:
+        name: echo
+        code: |
+          echo "test phase 3"
+
+
