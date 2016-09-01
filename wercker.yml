@@ -33,7 +33,7 @@ test:
     - script:
         name: step two
         code: |
-          java -version
+          sleep 60
 test2:
   steps:
     - script:
