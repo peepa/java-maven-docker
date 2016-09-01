@@ -26,9 +26,9 @@ build:
         code: |
           mvn clean package
   after-steps:
-    - wantedly/pretty-slack-notify:
-        webhook_url: $SLACK_WEBHOOK_URL
-        username: wercker
+    - slack-notifier:
+        url: $SLACK_WEBHOOK_URL
+        username: wercker bot
 test:
   steps:
     - script:
