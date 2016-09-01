@@ -1,4 +1,5 @@
 # Java Maven Docker
+[![wercker status](https://app.wercker.com/status/c643b63b8de680a2e4e66f16e6782090/s/ "wercker status")](https://app.wercker.com/project/byKey/c643b63b8de680a2e4e66f16e6782090)
 [![Build Status](https://travis-ci.org/mrpatiwi/java-maven-docker.svg)](https://travis-ci.org/mrpatiwi/java-maven-docker)
 
 Simple dockerized Maven project with Java 8.
