@@ -109,3 +109,7 @@ local.properties
 .texlipse
 
 
+# idea
+.idea/
+*.iml
+
