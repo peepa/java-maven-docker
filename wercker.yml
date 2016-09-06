@@ -29,6 +29,12 @@ build:
     - slack-notifier:
         url: $SLACK_WEBHOOK_URL
         username: wercker bot
+container:
+  steps:
+    - script:
+        name: build-docker-image
+        code: |
+           docker build --no-cache --rm --tag=peepa/java-hello-world .
 test:
   steps:
     - script:
