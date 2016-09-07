@@ -30,6 +30,7 @@ build:
         url: $SLACK_WEBHOOK_URL
         username: wercker bot
 container:
+  box: docker
   steps:
     - script:
         name: build-docker-image
