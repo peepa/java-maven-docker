@@ -30,12 +30,12 @@ build:
         url: $SLACK_WEBHOOK_URL
         username: wercker bot
 container:
-  box: docker
+  box: wercker-labs/docker
   steps:
     - script:
         name: build-docker-image
         code: |
-           docker build --no-cache --rm --tag=peepa/java-hello-world .
+           sudo docker build --no-cache --rm -t peepa/java-hello-world .
 test:
   steps:
     - script:
