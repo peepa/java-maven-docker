@@ -22,7 +22,7 @@ public class AppTest {
 
     @Test
     public void testFailure() throws Exception {
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
 
     }
 
