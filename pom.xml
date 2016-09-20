@@ -14,6 +14,9 @@
         <coverage.reports.dir>coverage-reports</coverage.reports.dir>
         <coverage.reports.unit.tests.dir>${unit.test.reports.dir}/${coverage.reports.dir}</coverage.reports.unit.tests.dir>
         <coverage.unit.exec.file.name>unit-tests.exec</coverage.unit.exec.file.name>
+
+        <sonar.host.url>http://:9000</sonar.host.url>
+        <sonar.language>java</sonar.language>
     </properties>
 
     <dependencies>

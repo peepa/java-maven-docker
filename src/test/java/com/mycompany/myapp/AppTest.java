@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 
 public class AppTest {
-
+    private App sut = new App();
     /**
      * Rigourous Test :-)
      */
@@ -17,5 +17,17 @@ public class AppTest {
         Assert.assertTrue(true);
     }
 
+    // adding tests
 
+    @Test
+    public void testFailure() throws Exception {
+        Assert.assertTrue(false);
+
+    }
+
+    @Test
+    public void testCalculate1() throws Exception {
+
+        Assert.assertEquals(2, sut.calculate1(1,1));
+    }
 }
